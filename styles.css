@@ -11,6 +11,12 @@ html{
     text-decoration: none;
 }
 
+section{
+    height: 100vh;
+    min-height: 500px;
+    padding: 50px 0;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 40px;
@@ -113,4 +119,50 @@ html{
 
 .home .home-content a:hover{
     background-color: rgba(0, 0, 0, .1);
+}
+
+
+/* About Section */
+.about{
+    font-family: "Montserrat", sans-serif;
+    background-color: bisque;
+}
+
+.about .title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 360px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .sub-title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.about .about-content .right p{
+    font-size: 20px;
+    text-align: justify;
 }
