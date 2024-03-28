@@ -12,7 +12,6 @@ html{
 }
 
 section{
-    height: 100vh;
     min-height: 500px;
     padding: 50px 0;
 }
@@ -125,7 +124,7 @@ section{
 /* About Section */
 .about{
     font-family: "Montserrat", sans-serif;
-    background-color: bisque;
+    background-color: #fff;
 }
 
 .about .title{
@@ -165,4 +164,55 @@ section{
 .about .about-content .right p{
     font-size: 20px;
     text-align: justify;
+}
+
+/* Services Section */
+.services{
+    width: 100%;
+    color: #000;
+    background-color: rgb(0, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+
+.services .title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services .services-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .services-content .card{
+    width: calc(33% - 20px);
+    background: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+}
+
+.services .services-content .card:hover{
+    background-color: antiquewhite;
+}
+
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card .box:hover{
+    transform: scale(1.05);
+}
+
+.services .services-content .card .fa-brands{
+    font-size: 50px;
+}
+
+.services .services-content .card .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
 }
