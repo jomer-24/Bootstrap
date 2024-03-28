@@ -216,3 +216,109 @@ section{
     font-weight: 600;
     margin: 10px 0;
 }
+
+/* Skills Section */
+.skills{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+.skills .title{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .sub-title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.skills .skills-content .left p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background: antiquewhite;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 26px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.skills .skills-content .left a:hover{
+    background-color: rgba(0, 0, 0, .1);
+
+}
+
+.skills .skills-content .right .bar{
+    margin: 20px;
+
+}
+
+.skills .skills-content .right .info{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: antiquewhite;
+}
+
+.skills .skills-content .right .html::before{
+    width: 80%;
+}
+
+.skills .skills-content .right .css::before {
+    width: 70%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 60%;
+}
+
+.skills .skills-content .right .php::before {
+    width: 50%;
+}
+
+.skills .skills-content .right .mysql::before {
+    width: 40%;
+}
+
+
