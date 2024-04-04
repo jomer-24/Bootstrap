@@ -12,7 +12,6 @@ html{
 }
 
 section{
-    min-height: 500px;
     padding: 50px 0;
 }
 
@@ -30,7 +29,7 @@ section{
     background-color: #ffffff;
     font-family: "Montserrat", sans-serif;
     box-shadow: 1px 1px 2px 2px #797979;
-    z-index: 2;
+    z-index: 1;
 }
 
 .navbar .sticky{
@@ -336,7 +335,6 @@ section{
 /* Contact Section */
 .contact{
     width: 100%;
-    height: 100vh;
     background: url("images/banner-5.jpg") no-repeat center;
     background-size: cover;
     font-family: "Montserrat", sans-serif;
@@ -403,7 +401,7 @@ section{
 }
 
 .contact .right form .field,
-.contact .right form .fields, .field{
+.contact .right form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 20px;
@@ -497,4 +495,218 @@ footer span a:hover{
 }
 
 
-/* Media queries / Responsive */
+/* Responsive Media queries */
+@media (max-width: 1920px){
+    .burger{
+        display: none;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .burger{
+        display: block;
+        z-index: 2;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 75vh;
+        width: 100%;
+        left: 0;
+        /* top: 0;
+        background-color: #fff;
+        opacity: 70%;
+        padding: 50px 0; */
+    }
+
+    /* .navbar .menu li{
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    } */
+
+    .home .home-content .text-2{
+        font-size: 35px;
+        margin: -6px;
+    }
+
+    .home .home-content a{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .max-width{
+        max-width: 930px;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    .services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 35px;
+    }
+
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 20px;
+    }
+
+    .home .max-width{
+        margin-left: 0;
+    }
+
+    .home .home-content .text-1{
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 30px;
+        margin-left: -6px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+
+    .home .home-content a{
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+
+    .services .services-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+}
+
+@media (min-width: 320px){
+    .about .title,
+    .services .title,
+    .skills .title,
+    .contact .title{
+        font-size: 26px;
+    }
+
+    .navbar .logo a{
+        font-size: 18px;
+    }
+
+    .about .about-content .left img {
+        height: 190px;
+        width: 150px;
+    }
+
+    .about .about-content .right .sub-title,
+    .skills .skills-content .left .sub-title,
+    .contact .contact-content .sub-title{
+        font-size: 20px;
+    }
+
+    .about .about-content .right p,
+    .skills .skills-content .left p,
+    .contact .contact-content .left p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .services .services-content .card .box .text{
+        font-size: 16px;
+    }
+
+    .services .services-content .card .box p{
+        font-size: 14px;
+    }
+
+    .skills .skills-content .left a{
+        font-size: 12px;
+        padding: 8px 24px;
+    }
+
+    .skills .skills-content .right .bar{
+        margin: 16px 0;
+
+    }
+
+    .skills .skills-content .right .bar .info span{
+        font-size: 16px;
+    }
+
+    .contact .contact-content .left .icons .info .head{
+        font-size: 16px;
+        font-weight: 600;
+    }  
+
+    .contact .contact-content .left .icons .info .sub-head{
+        font-size: 17px;
+    }
+
+    .contact .contact-content .left .icons .fa-solid {
+        font-size: 20px;
+        margin-right: 14px;
+    }
+
+    .contact .contact-content .right form .button{
+        width: 110px;
+        height: 40px;
+    }
+
+    .contact .contact-content .right form .button button{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
